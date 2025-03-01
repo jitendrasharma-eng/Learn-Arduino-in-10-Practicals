@@ -15,6 +15,7 @@ How to Run This Experiment
 2️⃣ Upload the provided code to the Arduino board.
 3️⃣ Observe the LED blinking every 1 second.
 
+
 Experiment 2: Blinking LED
 Components:
 Arduino Uno
@@ -33,3 +34,20 @@ How to Run This Experiment
 1️⃣ Press the button → The LED turns ON.
 2️⃣ Release the button → The LED turns OFF.
 3️⃣ Try using an external pull-down resistor (10kΩ) instead of INPUT_PULLUP.
+
+
+Experiment 3: PWM LED Fading (Analog Output)
+Components:
+Arduino Uno
+LED
+220Ω resistor
+This experiment teaches how to use PWM to control the LED's brightness smoothly. Instead of just turning an LED ON or OFF, we will fade it in and out by changing its brightness gradually.
+
+The setup() function sets pin 9 as an output, which supports PWM.
+The loop() function:
+Gradually increases LED brightness from 0 to 255.
+Gradually decreases brightness back to 0, creating a fading effect.
+How to Run This Experiment
+1️⃣ Upload the code to Arduino Uno.
+2️⃣ Observe the LED gradually increasing and decreasing brightness in a loop.
+3️⃣ Try changing delay(10) to make the fade faster or slower.
