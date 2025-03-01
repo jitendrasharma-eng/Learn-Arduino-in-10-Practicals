@@ -72,6 +72,29 @@ How to Run This Experiment
 📌 Next Steps: Use the analog value to control LED brightness or a servo motor! 
 
 
+Experiment 5: Servo Motor Control with Arduino
+ Components:
+Arduino Uno
+Servo Motor (SG90 or MG995)
+Jumper Wires
+A servo motor is a motor with precise angular control.
+We use the Servo library to control the motor.
+The motor moves to 0° → 90° → 180° at 1-second intervals.
+How to Run This Experiment
+1️⃣ Connect the servo motor to the Arduino.
+2️⃣ Upload the code.
+3️⃣ The servo will move to 0° → 90° → 180° repeatedly.
+note:-Install from Arduino Library Manager (Easiest Way)
+Open Arduino IDE.
+Go to:
+Arduino IDE (Old versions): Click on Sketch → Include Library → Manage Libraries….
+Arduino IDE 2.0: Click on Library Manager (icon on the left panel).
+Search for the required library (e.g., Servo, DHT).
+Click Install on the correct library.
+Done! ✅ Now you can use #include <LibraryName.h> in your code.
+
+
+
 Experiment 6: Display on LCD (16x2) - Parallel Mode 
 Components:
 Arduino Uno
@@ -176,4 +199,5 @@ How to Run This Experiment
 3️⃣ Wait for the PIR sensor to initialize (~30 seconds).
 4️⃣ Move in front of the sensor → Buzzer turns ON and "Motion Detected!" appears in the Serial Monitor.
 5️⃣ Stop moving → Buzzer turns OFF.
+
 
