@@ -126,7 +126,6 @@ Arduino Uno
 HC-SR04 Ultrasonic Sensor
 Jumper wires
 This experiment demonstrates how to measure distance using an ultrasonic sensor (HC-SR04).
-
 The TRIG pin sends an ultrasonic pulse.
 The ECHO pin receives the reflected pulse from an object.
 The pulseIn() function measures the time taken for the pulse to return.
@@ -140,3 +139,22 @@ How to Run This Experiment
 2️⃣ Upload the code to the Arduino.
 3️⃣ Open Serial Monitor (Tools → Serial Monitor) and set baud rate to 9600.
 4️⃣ Move an object in front of the sensor and observe the distance readings updating.
+
+
+Experiment 9: Motor Control using L298N
+Components:
+Arduino Uno
+L298N Motor Driver Module
+DC Motor
+Jumper Wires
+Power Supply (Battery or Adapter)
+This experiment demonstrates how to control the speed and direction of a DC motor using an L298N motor driver.
+The L298N module allows bidirectional motor control.
+The ENA (Enable A) pin is used for speed control via PWM (Pulse Width Modulation).
+The IN1 and IN2 pins control the motor's rotation direction.
+How to Run This Experiment
+1️⃣ Connect the L298N motor driver to the Arduino and motor as per the wiring diagram.
+2️⃣ Upload the code to the Arduino.
+3️⃣ Observe the DC motor rotating in one direction for 2 seconds.
+4️⃣ The motor then switches direction and runs for another 2 seconds.
+5️⃣ Modify the analogWrite(ENA, value) to change the motor speed.
