@@ -51,3 +51,22 @@ How to Run This Experiment
 1️⃣ Upload the code to Arduino Uno.
 2️⃣ Observe the LED gradually increasing and decreasing brightness in a loop.
 3️⃣ Try changing delay(10) to make the fade faster or slower.
+
+
+Experiment 4: Read Analog Value (Potentiometer)
+Components:
+Arduino Uno
+Potentiometer (10kΩ recommended)
+This experiment demonstrates how to read an analog value using a potentiometer and display it in the Serial Monitor. The potentiometer acts as a variable resistor, changing the voltage input to the Arduino.
+
+The setup() function initializes the serial communication at 9600 baud rate.
+The loop() function:
+Reads the analog value from pin A0 (range 0-1023).
+Prints the value to the Serial Monitor.
+Waits 500ms before reading again.
+How to Run This Experiment
+1️⃣ Upload the code to Arduino Uno.
+2️⃣ Open Serial Monitor (Tools → Serial Monitor) and set baud rate to 9600.
+3️⃣ Rotate the potentiometer and observe the values changing between 0 and 1023.
+
+📌 Next Steps: Use the analog value to control LED brightness or a servo motor! 
