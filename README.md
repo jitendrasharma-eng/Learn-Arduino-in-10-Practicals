@@ -118,3 +118,25 @@ Search for "DHT sensor library by Adafruit" and install it.
 3️⃣ Upload the code to the Arduino.
 4️⃣ Open Serial Monitor (Tools → Serial Monitor) and set the baud rate to 9600.
 5️⃣ Observe the temperature readings updating every 2 seconds.
+
+
+Experiment 8: Ultrasonic Sensor (Distance Measurement)
+Components:
+Arduino Uno
+HC-SR04 Ultrasonic Sensor
+Jumper wires
+This experiment demonstrates how to measure distance using an ultrasonic sensor (HC-SR04).
+
+The TRIG pin sends an ultrasonic pulse.
+The ECHO pin receives the reflected pulse from an object.
+The pulseIn() function measures the time taken for the pulse to return.
+The distance is calculated using the formula:
+
+Distance=(Time×0.0342)/2
+​
+(Where 0.034 cm/µs is the speed of sound in air, divided by 2 to account for the round-trip of the pulse).
+How to Run This Experiment
+1️⃣ Connect the ultrasonic sensor as per the wiring diagram.
+2️⃣ Upload the code to the Arduino.
+3️⃣ Open Serial Monitor (Tools → Serial Monitor) and set baud rate to 9600.
+4️⃣ Move an object in front of the sensor and observe the distance readings updating.
