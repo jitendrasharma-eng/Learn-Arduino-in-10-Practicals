@@ -158,3 +158,22 @@ How to Run This Experiment
 3️⃣ Observe the DC motor rotating in one direction for 2 seconds.
 4️⃣ The motor then switches direction and runs for another 2 seconds.
 5️⃣ Modify the analogWrite(ENA, value) to change the motor speed.
+
+
+Experiment 10: Motion Detection with PIR Sensor
+Components:
+Arduino Uno
+PIR Motion Sensor
+Buzzer
+Jumper Wires
+A PIR sensor detects motion by sensing changes in infrared radiation (heat).
+When motion is detected:
+✅ The buzzer sounds
+✅ A message is displayed on the Serial Monitor
+How to Run This Experiment
+1️⃣ Connect the PIR sensor and buzzer to the Arduino.
+2️⃣ Upload the code.
+3️⃣ Wait for the PIR sensor to initialize (~30 seconds).
+4️⃣ Move in front of the sensor → Buzzer turns ON and "Motion Detected!" appears in the Serial Monitor.
+5️⃣ Stop moving → Buzzer turns OFF.
+
