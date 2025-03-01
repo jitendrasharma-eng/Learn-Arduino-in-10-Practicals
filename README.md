@@ -91,3 +91,30 @@ How to Run This Experiment
 2️⃣ Upload the code in Arduino IDE.
 3️⃣ Adjust the potentiometer to set the contrast properly.
 4️⃣ Observe "Hello, Arduino!" appearing on the LCD.
+
+
+Experiment 7: Temperature Sensor (DHT11) 🌡️
+🔹 Concept: Interfacing a DHT11 temperature sensor with Arduino.
+🔹 Components:
+Arduino Uno
+DHT11 Sensor
+10kΩ pull-up resistor (optional)
+Jumper wires
+This experiment demonstrates how to read temperature data from a DHT11 sensor and display it on the Serial Monitor using the DHT library.
+
+The setup() function:
+
+Starts serial communication at 9600 baud rate.
+Initializes the DHT sensor.
+The loop() function:
+Reads the temperature in Celsius from the DHT11 sensor.
+Prints the temperature to the Serial Monitor.
+Waits 2 seconds before taking the next reading.
+How to Run This Experiment
+1️⃣ Install the DHT Library
+In Arduino IDE, go to Sketch → Include Library → Manage Libraries.
+Search for "DHT sensor library by Adafruit" and install it.
+2️⃣ Connect the DHT11 sensor as per the wiring diagram.
+3️⃣ Upload the code to the Arduino.
+4️⃣ Open Serial Monitor (Tools → Serial Monitor) and set the baud rate to 9600.
+5️⃣ Observe the temperature readings updating every 2 seconds.
