@@ -70,3 +70,24 @@ How to Run This Experiment
 3️⃣ Rotate the potentiometer and observe the values changing between 0 and 1023.
 
 📌 Next Steps: Use the analog value to control LED brightness or a servo motor! 
+
+
+Experiment 6: Display on LCD (16x2) - Parallel Mode 
+Components:
+Arduino Uno
+16x2 LCD (without I2C module)
+10kΩ potentiometer (for contrast adjustment)
+Resistors & wires
+This experiment demonstrates how to interface a 16x2 LCD in 4-bit mode using the LiquidCrystal library.
+
+The setup() function:
+
+Initializes the LCD with specified pins.
+Sets the cursor at the first row, first column.
+Displays "Hello, Arduino!".
+The loop() function is empty because we're displaying static text.
+How to Run This Experiment
+1️⃣ Connect the LCD to Arduino as per the wiring diagram.
+2️⃣ Upload the code in Arduino IDE.
+3️⃣ Adjust the potentiometer to set the contrast properly.
+4️⃣ Observe "Hello, Arduino!" appearing on the LCD.
