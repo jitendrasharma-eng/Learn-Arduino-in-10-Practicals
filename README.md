@@ -174,7 +174,7 @@
 ---
 
 <h2>🛠️ Author & License</h2>
-<p><strong>Created by:</strong> Your Name</p>
+<p><strong>Created by:</strong> Jitendra Sharma</p>
 <p>📜 Licensed under the <code>MIT License</code></p>
 
 <p align="center">🌟 If you find this helpful, give a ⭐️ to support!</p>
