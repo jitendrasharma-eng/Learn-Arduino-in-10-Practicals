@@ -1,178 +1,190 @@
-<h1 align="center">🚀 Learn Arduino in 10 Practicals</h1>
+<h1>Learn-Arduino-in-10-Practicals</h1>
 
-<p align="center"><b>A hands-on guide to mastering Arduino step-by-step for beginners!</b></p>
+<p>This repository contains <strong>10 hands-on experiments</strong> to help beginners learn <strong>Arduino programming and hardware interfacing</strong> step by step. Each experiment includes <strong>circuit diagrams, code, and explanations</strong>.</p>
 
----
-
-<h2>📘 Overview</h2>
-<p>This repository contains <strong>10 hands-on experiments</strong> to help beginners learn <strong>Arduino programming and hardware interfacing</strong> step by step. Each experiment includes <em>circuit diagrams, code, and explanations</em>.</p>
-
----
-
-<h2>🧪 Experiments List</h2>
-
-<h3>🔹 Experiment 1: Blinking LED</h3>
+<h2>Experiment 1: Blinking LED</h2>
+<p><strong>Components:</strong><br>
+Arduino Uno<br>
+LED (any color)<br>
+220Ω resistor</p>
+<p>The blinking LED experiment is the "Hello World" of embedded systems. It demonstrates how to control an LED using an Arduino.</p>
 <ul>
-  <li>🧰 Components: Arduino Uno, LED, 220Ω resistor</li>
-  <li>⚙️ Demonstrates basic digital output using <code>digitalWrite()</code>.</li>
+  <li>The setup() function configures pin 13 as an output.</li>
+  <li>The loop() function turns the LED ON for 1 second and then OFF for 1 second, repeating indefinitely.</li>
 </ul>
-<details>
-  <summary>📋 How to Run</summary>
-  <ol>
-    <li>Connect the LED to pin 13 with a 220Ω resistor.</li>
-    <li>Upload the code to Arduino.</li>
-    <li>Watch the LED blink every second.</li>
-  </ol>
-</details>
+<p><strong>How to Run This Experiment</strong></p>
+<ol>
+  <li>Connect the LED to pin 13 of Arduino (with a 220Ω resistor in series).</li>
+  <li>Upload the provided code to the Arduino board.</li>
+  <li>Observe the LED blinking every 1 second.</li>
+</ol>
 
----
-
-<h3>🔹 Experiment 2: Push Button Controlled LED</h3>
+<h2>Experiment 2: Push Button with LED</h2>
+<p><strong>Components:</strong><br>
+Arduino Uno<br>
+Push Button<br>
+LED<br>
+220Ω resistor</p>
+<p>This experiment teaches how to read a push button as an input and control an LED based on its state.</p>
 <ul>
-  <li>🧰 Components: Arduino Uno, Push Button, LED, 220Ω resistor</li>
-  <li>⚙️ Uses <code>digitalRead()</code> with internal pull-up.</li>
+  <li>Pin 12 as input with internal pull-up resistor.</li>
+  <li>Pin 13 as output for LED.</li>
+  <li>If button is pressed → LED turns ON.</li>
+  <li>If not pressed → LED turns OFF.</li>
 </ul>
-<details>
-  <summary>📋 How to Run</summary>
-  <ol>
-    <li>Button press turns LED ON, release turns it OFF.</li>
-    <li>Try external pull-down (10kΩ) for learning.</li>
-  </ol>
-</details>
+<p><strong>How to Run This Experiment</strong></p>
+<ol>
+  <li>Press the button → The LED turns ON.</li>
+  <li>Release the button → The LED turns OFF.</li>
+  <li>Try using an external pull-down resistor (10kΩ) instead of INPUT_PULLUP.</li>
+</ol>
 
----
-
-<h3>🔹 Experiment 3: PWM LED Fading</h3>
+<h2>Experiment 3: PWM LED Fading (Analog Output)</h2>
+<p><strong>Components:</strong><br>
+Arduino Uno<br>
+LED<br>
+220Ω resistor</p>
+<p>This experiment teaches PWM to control the LED's brightness smoothly.</p>
 <ul>
-  <li>🧰 Components: Arduino Uno, LED, 220Ω resistor</li>
-  <li>⚙️ Uses <code>analogWrite()</code> to fade LED brightness.</li>
+  <li>Pin 9 used for PWM output.</li>
+  <li>LED brightness gradually increases from 0 to 255 and back to 0.</li>
 </ul>
-<details>
-  <summary>📋 How to Run</summary>
-  <ol>
-    <li>Upload the code using PWM on pin 9.</li>
-    <li>LED will fade in and out.</li>
-  </ol>
-</details>
+<p><strong>How to Run This Experiment</strong></p>
+<ol>
+  <li>Upload the code to Arduino Uno.</li>
+  <li>Observe LED fading effect.</li>
+  <li>Try changing delay(10) for different speeds.</li>
+</ol>
 
----
-
-<h3>🔹 Experiment 4: Reading Analog Value (Potentiometer)</h3>
+<h2>Experiment 4: Read Analog Value (Potentiometer)</h2>
+<p><strong>Components:</strong><br>
+Arduino Uno<br>
+Potentiometer (10kΩ recommended)</p>
+<p>Demonstrates reading analog values from a potentiometer.</p>
 <ul>
-  <li>🧰 Components: Arduino Uno, Potentiometer (10kΩ)</li>
-  <li>⚙️ Reads analog values using <code>analogRead()</code>.</li>
+  <li>Reads from A0 (0–1023 range).</li>
+  <li>Prints to Serial Monitor.</li>
 </ul>
-<details>
-  <summary>📋 How to Run</summary>
-  <ol>
-    <li>Rotate potentiometer.</li>
-    <li>Open Serial Monitor to view values (0-1023).</li>
-  </ol>
-</details>
+<p><strong>How to Run This Experiment</strong></p>
+<ol>
+  <li>Upload code to Arduino Uno.</li>
+  <li>Open Serial Monitor at 9600 baud.</li>
+  <li>Rotate the potentiometer and observe changes.</li>
+</ol>
+<p><strong>📌 Next Steps:</strong> Use analog value to control LED brightness or servo motor.</p>
 
----
-
-<h3>🔹 Experiment 5: Servo Motor Control</h3>
+<h2>Experiment 5: Servo Motor Control with Arduino</h2>
+<p><strong>Components:</strong><br>
+Arduino Uno<br>
+Servo Motor (SG90 or MG995)<br>
+Jumper Wires</p>
+<p>Uses Servo library to control motor angles (0° → 90° → 180°).</p>
+<p><strong>How to Run This Experiment</strong></p>
+<ol>
+  <li>Connect servo motor.</li>
+  <li>Upload code.</li>
+  <li>Observe servo rotating between angles.</li>
+</ol>
+<p><strong>Note:</strong> Install library via Arduino Library Manager:</p>
 <ul>
-  <li>🧰 Components: Arduino Uno, SG90 Servo Motor</li>
-  <li>⚙️ Uses <code>Servo.h</code> library to control angles.</li>
-</ul>
-<details>
-  <summary>📋 How to Run</summary>
-  <ol>
-    <li>Connect servo to Arduino.</li>
-    <li>Use Servo library to move it from 0° → 180°.</li>
-  </ol>
-</details>
-
----
-
-<h3>🔹 Experiment 6: 16x2 LCD Display</h3>
-<ul>
-  <li>🧰 Components: Arduino Uno, 16x2 LCD, 10kΩ potentiometer</li>
-  <li>⚙️ Uses <code>LiquidCrystal.h</code> to display text.</li>
-</ul>
-<details>
-  <summary>📋 How to Run</summary>
-  <ol>
-    <li>Wire LCD in 4-bit mode.</li>
-    <li>Upload code and adjust contrast.</li>
-    <li>See "Hello, Arduino!" on the display.</li>
-  </ol>
-</details>
-
----
-
-<h3>🔹 Experiment 7: Temperature Sensing (DHT11) 🌡️</h3>
-<ul>
-  <li>🧰 Components: Arduino Uno, DHT11, 10kΩ resistor</li>
-  <li>⚙️ Reads temperature using <code>DHT.h</code> library.</li>
-</ul>
-<details>
-  <summary>📋 How to Run</summary>
-  <ol>
-    <li>Install DHT sensor library by Adafruit.</li>
-    <li>Upload code and view temperature in Serial Monitor.</li>
-  </ol>
-</details>
-
----
-
-<h3>🔹 Experiment 8: Ultrasonic Distance Measurement</h3>
-<ul>
-  <li>🧰 Components: Arduino Uno, HC-SR04</li>
-  <li>⚙️ Measures distance using <code>pulseIn()</code>.</li>
-</ul>
-<details>
-  <summary>📋 How to Run</summary>
-  <ol>
-    <li>Connect TRIG and ECHO pins.</li>
-    <li>Upload code and read distance on Serial Monitor.</li>
-  </ol>
-</details>
-
----
-
-<h3>🔹 Experiment 9: DC Motor Control (L298N)</h3>
-<ul>
-  <li>🧰 Components: Arduino Uno, L298N, DC Motor</li>
-  <li>⚙️ Controls direction & speed using <code>analogWrite()</code>.</li>
-</ul>
-<details>
-  <summary>📋 How to Run</summary>
-  <ol>
-    <li>Wire the motor driver module.</li>
-    <li>Observe motor changing direction and speed.</li>
-  </ol>
-</details>
-
----
-
-<h3>🔹 Experiment 10: Motion Detection with PIR Sensor</h3>
-<ul>
-  <li>🧰 Components: Arduino Uno, PIR Sensor, Buzzer</li>
-  <li>⚙️ Detects motion and alerts via buzzer & Serial Monitor.</li>
-</ul>
-<details>
-  <summary>📋 How to Run</summary>
-  <ol>
-    <li>Upload code and connect sensor & buzzer.</li>
-    <li>Move in front → buzzer sounds and message appears.</li>
-  </ol>
-</details>
-
----
-
-<h2>📎 Library Installation Guide</h2>
-<ul>
-  <li>Open Arduino IDE.</li>
-  <li>Go to <strong>Sketch → Include Library → Manage Libraries</strong>.</li>
-  <li>Search and install: <code>Servo</code>, <code>DHT</code>, etc.</li>
-  <li>Now use <code>#include &lt;LibraryName.h&gt;</code> in your code.</li>
+  <li>Sketch → Include Library → Manage Libraries.</li>
+  <li>Search and install Servo, DHT, etc.</li>
 </ul>
 
----
+<h2>Experiment 6: Display on LCD (16x2) - Parallel Mode</h2>
+<p><strong>Components:</strong><br>
+Arduino Uno<br>
+16x2 LCD<br>
+10kΩ potentiometer<br>
+Resistors & wires</p>
+<p>Demonstrates interfacing LCD using LiquidCrystal library.</p>
+<ul>
+  <li>Initializes LCD and prints static text.</li>
+</ul>
+<p><strong>How to Run This Experiment</strong></p>
+<ol>
+  <li>Connect LCD as per diagram.</li>
+  <li>Upload the code.</li>
+  <li>Adjust potentiometer for contrast.</li>
+  <li>Observe "Hello, Arduino!" on LCD.</li>
+</ol>
 
+<h2>Experiment 7: Temperature Sensor (DHT11) 🌡️</h2>
+<p><strong>Components:</strong><br>
+Arduino Uno<br>
+DHT11 Sensor<br>
+10kΩ pull-up resistor (optional)<br>
+Jumper wires</p>
+<p>Reads temperature data from DHT11 sensor using DHT library.</p>
+<ul>
+  <li>Initializes serial at 9600 baud.</li>
+  <li>Prints temperature every 2 seconds.</li>
+</ul>
+<p><strong>How to Run This Experiment</strong></p>
+<ol>
+  <li>Install "DHT sensor library by Adafruit".</li>
+  <li>Connect DHT11 sensor.</li>
+  <li>Upload code to Arduino.</li>
+  <li>Open Serial Monitor (9600 baud).</li>
+</ol>
+
+<h2>Experiment 8: Ultrasonic Sensor (Distance Measurement)</h2>
+<p><strong>Components:</strong><br>
+Arduino Uno<br>
+HC-SR04 Ultrasonic Sensor<br>
+Jumper wires</p>
+<p>Measures distance using ultrasonic sensor.</p>
+<ul>
+  <li>TRIG sends pulse.</li>
+  <li>ECHO receives pulse.</li>
+  <li>Distance calculated using: <code>Distance = (Time × 0.0342) / 2</code></li>
+</ul>
+<p><strong>How to Run This Experiment</strong></p>
+<ol>
+  <li>Connect sensor.</li>
+  <li>Upload code.</li>
+  <li>Open Serial Monitor (9600 baud).</li>
+  <li>Move object and observe distance updates.</li>
+</ol>
+
+<h2>Experiment 9: Motor Control using L298N</h2>
+<p><strong>Components:</strong><br>
+Arduino Uno<br>
+L298N Motor Driver Module<br>
+DC Motor<br>
+Jumper Wires<br>
+Power Supply</p>
+<p>Controls speed and direction of DC motor using L298N driver.</p>
+<ul>
+  <li>ENA controls speed via PWM.</li>
+  <li>IN1/IN2 control motor direction.</li>
+</ul>
+<p><strong>How to Run This Experiment</strong></p>
+<ol>
+  <li>Connect motor driver and motor.</li>
+  <li>Upload code.</li>
+  <li>Motor rotates in both directions alternately.</li>
+  <li>Modify <code>analogWrite(ENA, value)</code> to change speed.</li>
+</ol>
+
+<h2>Experiment 10: Motion Detection with PIR Sensor</h2>
+<p><strong>Components:</strong><br>
+Arduino Uno<br>
+PIR Motion Sensor<br>
+Buzzer<br>
+Jumper Wires</p>
+<p>PIR sensor detects motion based on infrared radiation.</p>
+<ul>
+  <li>Motion detected → Buzzer ON + Serial message</li>
+  <li>No motion → Buzzer OFF</li>
+</ul>
+<p><strong>How to Run This Experiment</strong></p>
+<ol>
+  <li>Connect PIR sensor and buzzer.</li>
+  <li>Upload code.</li>
+  <li>Wait ~30 seconds for sensor to initialize.</li>
+  <li>Move in front of sensor → Observe buzzer and Serial Monitor.</li>
+</ol>
 <p><strong>✅ Happy Learning! Build more Projects using Arduino 🚀</strong></p>
 📬 Author: Jitendra Sharma
 📧 Email: jitendrasharma7409@gmail.com
